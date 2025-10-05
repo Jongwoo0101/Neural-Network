@@ -1,7 +1,5 @@
-import sys, os
 import numpy as np
 
-sys.path.append(os.path.abspath('data'))
 from functions import get_data, init_network, predict
 
 x, t = get_data()

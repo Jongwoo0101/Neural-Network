@@ -4,7 +4,9 @@
 import sys, os
 import numpy as np
 import pickle
-sys.path.append(os.path.abspath('data'))
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from data.mnist import load_mnist
 from PIL import Image
 

@@ -1,10 +1,5 @@
-import sys, os
 import numpy as np
-import pickle
-sys.path.append(os.path.abspath('data'))
-from data.mnist import load_mnist
-from PIL import Image
-from functions import softmax, sigmoid, get_data, init_network, predict
+from functions import get_data, init_network, predict
 
 x, t = get_data()
 network = init_network()
