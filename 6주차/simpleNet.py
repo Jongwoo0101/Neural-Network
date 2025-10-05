@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.pardir)
 import numpy as np
-from functions import softmax, cross_entropy_error, numerical_gradient
+from functions import softmax, cross_entropy_error
 
 class simpleNet:
     def __init__(self):
@@ -25,7 +25,7 @@ class simpleNet:
         batch_size = y.shape[0]
         return -np.sum(t * np.log(y + 1e-7)) / batch_size
 
-'''
+
 # test 
 net = simpleNet()
 print(net.W) # 가중치 매개변수
@@ -37,4 +37,3 @@ print(np.argmax(p)) # 최댓값의 인덱스
 
 t = np.array([0, 0, 1]) # 정답 레이블
 print(net.loss(x, t))
-'''
