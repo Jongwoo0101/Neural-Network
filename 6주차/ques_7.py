@@ -1,6 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import time
+import time, sys, os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))  # 부모 디렉터리의 파일을 가져올 수 있도록 설정
+
 from data.mnist import load_mnist
 from two_layer_net import TwoLayerNet
 
