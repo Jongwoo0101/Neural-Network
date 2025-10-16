@@ -54,6 +54,7 @@ def cross_entropy_error(y, t):
 
 #     return grad
 
+
 def numerical_gradient(f, x):
     h = 1e-4
     grad = np.zeros_like(x)
