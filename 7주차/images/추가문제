@@ -1,0 +1,29 @@
+digraph {
+	rankdir=LR size="8,5"
+	x [label=x]
+	y [label=y]
+	mul1 [label="×"]
+	mul2 [label="×2"]
+	sub [label="−1"]
+	sq [label="**2"]
+	add1 [label="+1"]
+	z [label=z]
+	x -> mul1
+	y -> mul1
+	mul1 -> mul2 [label="t = xy"]
+	mul2 -> sub [label="u = 2t"]
+	sub -> sq [label="v = 2xy−1"]
+	sq -> add1 [label="w = v²"]
+	add1 -> z [label="z = w + 1"]
+	z -> add1 [label="∂z/∂w = 1" color=red]
+	add1 -> sq [label="∂w/∂v = 2v" color=red]
+	sq -> sub [label="∂v/∂(2xy) = 1" color=red]
+	sub -> mul2 [label="∂(2xy)/∂(xy) = 2" color=red]
+	mul2 -> mul1 [label="∂(xy)/∂x, ∂(xy)/∂y" color=red]
+	mul1 -> x [label="∂(xy)/∂x = y" color=red]
+	mul1 -> y [label="∂(xy)/∂y = x" color=red]
+	dzdx [label="∂z/∂x = 4y(2xy−1)" color=blue fontcolor=blue shape=note]
+	dzdy [label="∂z/∂y = 4x(2xy−1)" color=blue fontcolor=blue shape=note]
+	x -> dzdx [color=blue style=dashed]
+	y -> dzdy [color=blue style=dashed]
+}
