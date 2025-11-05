@@ -4,7 +4,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))  # 부모 디렉�
 from data.mnist import load_mnist
 from two_layer_net import TwoLayerNet
 import functions
-print("현재 불러온 functions.py 경로:", functions.__file__)
 # 데이터 읽기
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
 
