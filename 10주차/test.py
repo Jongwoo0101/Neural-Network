@@ -3,7 +3,7 @@ import sys, os, time
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))  # 부모 디렉터리의 파일을 가져올 수 있도록 설정
 from data.mnist import load_mnist
 from two_layer_net import TwoLayerNet
-import functions
+from common.functions import *
 # 데이터 읽기
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
 

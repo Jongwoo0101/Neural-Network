@@ -1,13 +1,12 @@
 import sys, os
 import matplotlib.pyplot as plt
-from util import smooth_curve
-from multi_layer_net import MultiLayerNet
-from optimizer import *
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from data.mnist import load_mnist
-
+from common.util import smooth_curve
+from common.multi_layer_net import MultiLayerNet
+from common.optimizer import *
 
 
 # 0. MNIST 데이터 읽기==========

@@ -1,5 +1,9 @@
 import numpy as np
-from functions import softmax, sigmoid
+import sys, os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+from common.functions import softmax, sigmoid
 
 x = np.array([1, 2]) # x1, x2 = 1, 2
 

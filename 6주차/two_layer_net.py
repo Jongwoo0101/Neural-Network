@@ -1,6 +1,8 @@
 import sys, os
-sys.path.append(os.pardir)
-from functions import *
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+from common.functions import *
 
 class TwoLayerNet:
     def __init__(self, input_size, hidden_size, output_size, weight_init_std=0.01):

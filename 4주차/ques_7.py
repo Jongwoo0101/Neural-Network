@@ -1,5 +1,9 @@
 import numpy as np
-from functions import get_data, init_network, predict
+import sys, os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+from common.functions import get_data, init_network, predict
 
 x, t = get_data()
 network = init_network()

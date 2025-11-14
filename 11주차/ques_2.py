@@ -2,7 +2,10 @@ import sys, os
 import numpy as np
 import matplotlib.pyplot as plt
 from collections import OrderedDict
-from optimizer import *
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+from common.optimizer import *
 
 # 목적 함수
 def f(x, y):

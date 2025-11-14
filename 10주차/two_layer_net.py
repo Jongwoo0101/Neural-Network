@@ -1,6 +1,10 @@
 import numpy as np
-from layers import *
-from functions import numerical_gradient
+import os, sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+from common.layers import *
+from common.functions import numerical_gradient
 from collections import OrderedDict
 
 class TwoLayerNet:

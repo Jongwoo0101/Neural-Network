@@ -1,5 +1,9 @@
 import numpy as np
-from functions import softmax, cross_entropy_error
+import sys, os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+from common.functions import softmax, cross_entropy_error
 
 class Relu:
     def __init__(self):

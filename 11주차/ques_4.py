@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from data.fashion import mnist_reader
-from util import smooth_curve
-from multi_layer_net import MultiLayerNet
-from optimizer import *
+from common.util import smooth_curve
+from common.multi_layer_net import MultiLayerNet
+from common.optimizer import *
 
 x_train, t_train = mnist_reader.load_mnist('../data/fashion/', kind='train')
 x_test, t_test = mnist_reader.load_mnist('../data/fashion/', kind='t10k')

@@ -1,5 +1,9 @@
 import numpy as np
-from functions import numerical_gradient
+import sys, os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+from common.functions import numerical_gradient
 
 
 def function_f(x):
