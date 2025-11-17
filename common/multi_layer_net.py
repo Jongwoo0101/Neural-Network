@@ -1,12 +1,11 @@
-# coding: utf-8
 import sys, os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 import numpy as np
 from collections import OrderedDict
-from layers import *
-from gradient import numerical_gradient
+from common.layers import *
+from common.gradient import numerical_gradient
 
 
 class MultiLayerNet:
