@@ -1,3 +1,6 @@
+'''
+데이터셋을 fashion mnist으로 변경하여 옵티마이저 비교
+'''
 import sys, os
 import matplotlib.pyplot as plt
 

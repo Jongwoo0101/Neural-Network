@@ -1,3 +1,7 @@
+'''
+목적함수 바꾸고 옵티마이저 비교
+'''
+
 import sys, os
 import numpy as np
 import matplotlib.pyplot as plt
